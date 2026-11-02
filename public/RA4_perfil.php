@@ -31,3 +31,7 @@ unset($_SESSION['mensaje']);
 </form>
 </body>
 </html>
+
+ <?php if ($usuario['rol'] === 'alumno'): ?>
+   <p><a href="RA4_miCurriculo.php">Mi currículo</a></p>
+ <?php endif; ?>
